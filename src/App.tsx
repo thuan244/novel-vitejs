@@ -4,7 +4,7 @@ import { GoogleGenAI } from '@google/genai';
 import audioBufferToWav from 'audiobuffer-to-wav';
 import { Buffer } from 'buffer';
 
-const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || 'AIzaSyCl9ilmG07DzcYybGIVjNaiDMBs_LbxUck';
+const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY || '';
 const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
 const API_BASE_URL = 'http://localhost/novel-vitejs';
 
